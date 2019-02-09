@@ -116,15 +116,44 @@ header .layout-wide {
 /* ----------------------------- FOOTER */
 
 footer {
-    background-color: var(--alternative-bg-color);
-    padding: var(--padder);      
+    background-color: var(--alternative-bg-color);   
 }
+
+.footer-subscribe {
+    background-color: var(--alternative-text-color);
+    padding-top: var(--spacer-large);
+    padding-bottom: var(--spacer-large);
+    text-align: center;
+
+}
+
+.footer-notices {
+    padding-top: var(--spacer);
+    padding-bottom: var(--spacer);
+}
+.footer-notices .layout-wide {
+    margin-bottom: 0;
+    color: var(--alternative-text-color);
+    text-align: center;
+    }
+
 
 
 /* ----------------------------- FORMS */
 
+label {
+    font-weight: bold;
+    display: block; 
+}
 
-
+input[type="text"],
+input[type="email"] {
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    width: 100%;
+    max-width: 480px;
+    margin-bottom: var(--spacer);
+}
 
 /* ----------------------------- MODULES */
 
