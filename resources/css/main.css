@@ -36,13 +36,27 @@
    
     --area-wide: 1200px;
     --area-narrow: 800px;
+
+    --font-default: arial, sans-serif;
+    --font-heading: georgia, serif;
   }
 
 
 /* ----------------------------- GLOBAL DEFAULTS */
 
+* {
+    box-sizing: border-box;
+}
 
+body {
+    color: var(--main-text-color);
+    font-family: var(--font-default);
+    }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 /* ----------------------------- HEADINGS AND TYPE */
 
@@ -51,14 +65,48 @@
 
 /* ----------------------------- LAYOUTS */
 
+.layout-wide {
+    max-width: var(--area-wide);
+    margin-bottom: var(--spacer-large);
+    
+    margin-left: auto;
+    margin-right: auto;
 
+    padding-left: var(--padder);
+    padding-right: var(--padder);
 
+}
+
+.layout-full-width {
+    width: 100%;
+    margin-bottom: var(--spacer-large);
+
+}
 
 /* ----------------------------- HEADER */
 
 header {
     background-color: var(--alternative-bg-color);
-    }
+    padding-top: var(--padder);    
+}
+
+header .layout-wide {
+    overflow: hidden; 
+}
+   
+.logo-wrapper {
+    width: 20%;
+    float: left; 
+}
+
+.site-title {
+    color: var(--alternative-text-color);
+    font-size: var(--font-size-site-title);
+    width: 80%;
+    float: right;
+    text-align: right;
+    font-family: var(--font-heading);
+}
 
 /* ----------------------------- NAVIGATION */
 
@@ -69,7 +117,8 @@ header {
 
 footer {
     background-color: var(--alternative-bg-color);
-    }
+    padding: var(--padder);      
+}
 
 
 /* ----------------------------- FORMS */
