@@ -314,7 +314,17 @@ input[type="submit"]:hover {
         color: var(--alternative-text-color);   
         text-shadow: 0px 1px 10px var(--strong-text-color); 
     }
-
 }
 
+/* Grids (creating columns, use 'div' in html to seperate where you want those columns to form) */
+
+@media screen and (min-width: 800px) {
+
+.content-area-grid {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between; 
+    }
+
+}
 
