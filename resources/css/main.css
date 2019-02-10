@@ -395,6 +395,7 @@ main {
 .logo-wrapper a:hover img {
     animation-name: spin;
     animation-duration: 1s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite;        /*keeps the animation happening aslong as being hovered*/
+    animation-timing-function: linear;          /*makes the animation smooth*/
 }
 
