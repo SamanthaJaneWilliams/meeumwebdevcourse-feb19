@@ -1,6 +1,10 @@
+//Polyfill
+
 cssVars();
 
-//this opens/closes the mobile nav
+
+
+//This opens/closes the mobile nav
 
 $('.nav-promt').click(function () {
 
@@ -14,3 +18,16 @@ $('.nav-promt').click(function () {
     }
 })
 
+
+
+//Image Gallery LightBox 
+
+function imageGallery() {
+    if (!$('.image-gallery').length) {
+        return;
+    }
+
+    $('.image-gallery a').simpleLightbox();
+}
+
+imageGallery();

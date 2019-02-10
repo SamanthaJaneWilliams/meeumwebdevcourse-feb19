@@ -12,6 +12,8 @@
 
     <link rel="stylesheet" href="resources/css/normalize.css" />
 
+    <link rel="stylesheet" href="resources/css/simpleLightbox.min.css">
+
     <link rel="stylesheet" href="resources/css/main.css" />
 
     <!--This code is for the Favicon, use the realfavicongenerator to create these links in future-->
@@ -103,49 +105,118 @@
     <!--MAIN CODE-->
 
     <main>
-      
-    <div class="hero-module">
-
+      <div class="hero-module">
         <!-- <img src="resources/images/statue-of-liberty.jpg" alt="Statue of liberty"> -->
 
-        <video autoplay loop muted src="resources/video/new-york.mp4" poster="resources/images/statue-of-liberty.jpg">
-        <!--Add a poster element so that while the video is loading it will display an image (i.e. a screenshot of the video is good to use)-->
-
-        </video> 
+        <video
+          autoplay
+          loop
+          muted
+          src="resources/video/new-york.mp4"
+          poster="resources/images/statue-of-liberty.jpg"
+        >
+          <!--Add a poster element so that while the video is loading it will display an image (i.e. a screenshot of the video is good to use)-->
+        </video>
 
         <div class="hero-content">
-            <h1 class="layout-wide heading-main">
-                Media
-            </h1>
+          <h1 class="layout-wide heading-main">
+            Media
+          </h1>
         </div>
-    </div>
+      </div>
 
+      <section class="layout-wide">
+        <h2>Audio</h2>
 
-    <section class="layout-wide">
+        <audio src="resources/audio/bensound-happyrock.mp3" controls></audio>
+      </section>
 
-      <h2>Audio</h2>
+      <!--IMAGE GALLERY-->
+      <section class="layout-wide">
+        <div class="image-gallery">
+          <ul>
+            <li>
+              <a href="resources/galleries/new-york-01.jpg">
+                <img
+                  src="resources/galleries/new-york-01-thumb.jpg"
+                  alt="New York"
+                />
+              </a>
+            </li>
 
-      <audio src="resources/audio/bensound-happyrock.mp3" controls></audio>
+            <li>
+              <a href="resources/galleries/new-york-02.jpg">
+                <img
+                  src="resources/galleries/new-york-02-thumb.jpg"
+                  alt="New York"
+                />
+              </a>
+            </li>
 
-    </section>
+            <li>
+              <a href="resources/galleries/new-york-03.jpg">
+                <img
+                  src="resources/galleries/new-york-03-thumb.jpg"
+                  alt="New York"
+                />
+              </a>
+            </li>
 
+            <li>
+              <a href="resources/galleries/new-york-04.jpg">
+                <img
+                  src="resources/galleries/new-york-04-thumb.jpg"
+                  alt="New York"
+                />
+              </a>
+            </li>
 
+            <li>
+              <a href="resources/galleries/new-york-05.jpg">
+                <img
+                  src="resources/galleries/new-york-05-thumb.jpg"
+                  alt="New York"
+                />
+              </a>
+            </li>
 
+            <li>
+              <a href="resources/galleries/new-york-06.jpg">
+                <img
+                  src="resources/galleries/new-york-06-thumb.jpg"
+                  alt="New York"
+                />
+              </a>
+            </li>
 
+            <li>
+              <a href="resources/galleries/new-york-07.jpg">
+                <img
+                  src="resources/galleries/new-york-07-thumb.jpg"
+                  alt="New York"
+                />
+              </a>
+            </li>
 
-
-
-
+            <li>
+              <a href="resources/galleries/new-york-08.jpg">
+                <img
+                  src="resources/galleries/new-york-08-thumb.jpg"
+                  alt="New York"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
-
 
     <!--FOOTER CODE-->
 
     <footer>
       <div class="footer-subscribe">
         <div class="layout-wide">
-          
-            <!--Subscription Form-->
+          <!--Subscription Form-->
 
           <!-- Begin Mailchimp Signup Form -->
 
@@ -256,7 +327,12 @@
     <!--This Jquery script affects how the navigation bar opens-->
     <script src="resources/js/jquery.js"></script>
 
-    <!--This code aligns to the 2 above-->
+    <!--This script is for the image gallery, there is an CSS file at the top that goes with this-->
+    <script src="resources/js/simpleLightbox.min.js"></script>
+
+    <!--These scripts go with the above 3 x JS scripts-->
     <script src="resources/js/scripts.js"></script>
+
+
   </body>
 </html>

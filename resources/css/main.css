@@ -167,6 +167,7 @@ header .layout-wide {
     /*This makes the navigation bar scroll with the user (stays at top)*/
     position: sticky; 
     top: 0;
+    z-index: 50; /* This will keep the nav sticky above all images/videos/audio */
 }
 
 .nav-promt {
@@ -334,3 +335,30 @@ input[type="submit"]:hover {
 
 }
 
+/* IMAGE GALLERY */
+
+.image-gallery ul {
+    list-style: none;           /*removes dot points*/
+    padding: 0;
+    margin: 0;
+    overflow: hidden;           /*fixes layout if you're using 'float'*/
+}
+
+.image-gallery li {
+    float: left;
+    max-width: 250px;
+    margin: 10px; 
+}
+
+.image-gallery a img {          /*targets image inside a element */
+    display: block;             /*makes borders around the images all the same*/
+    filter: grayscale(70%);   
+    box-shadow: 0px 1px 10px var(--strong-text-color);
+    transition: var(--transition-time); 
+    }
+
+
+.image-gallery a:hover img {    /*this affects the hover over the images*/
+    filter: unset;              /*ignores what was set as filter previously for the hover*/
+    transform: scale(1.05);
+}
