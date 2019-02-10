@@ -77,6 +77,10 @@ video {
     max-width: 100%;
 }
 
+iframe {                        /*I used an iframe to pull the google map*/
+    max-width:100%; 
+}
+
 
 /* ----------------------------- HEADINGS AND TYPE */
 
