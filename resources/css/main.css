@@ -1,9 +1,8 @@
-
+@import url('https://fonts.googleapis.com/css?family=Lilita+One|Raleway');
 
 /* ----------------------------- VARIABLES */
 
 :root {
-
 
     /* Colors */
     --color-green: #084e3f;
@@ -37,8 +36,8 @@
     --area-wide: 1200px;
     --area-narrow: 800px;
 
-    --font-default: arial, sans-serif;
-    --font-heading: georgia, serif;
+    --font-default: 'Raleway', sans-serif;
+    --font-heading: 'Lilita One', cursive;
   }
 
 
@@ -51,6 +50,8 @@
 body {
     color: var(--main-text-color);
     font-family: var(--font-default);
+    font-size: 18px;
+    line-height: 1.8; 
     }
 
 img {
@@ -60,8 +61,38 @@ img {
 
 /* ----------------------------- HEADINGS AND TYPE */
 
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font-heading);
+    color: var(--strong-text-color);
+    font-weight: normal; /* This takes away the standard bold format on headings */
+    }
 
+h1 {
+    font-size: var(--font-size-page-title);
+}
 
+h2 {
+    font-size: var(--font-size-section-title);
+}
+
+h3 {
+    font-size: var(--font-size-sub-title);
+}
+
+h4 {
+    font-size: var(--font-size-heading-small);
+}
+
+a {
+    color: var(--link-color); /* this changes the colours of all links */
+}
+
+a:hover {
+    color: var(--strong-text-color); /* this changes the hover colour of all links */
+}
 
 /* ----------------------------- LAYOUTS */
 
@@ -154,6 +185,21 @@ input[type="email"] {
     max-width: 480px;
     margin-bottom: var(--spacer);
 }
+
+input[type="submit"] {
+    font-family: var(--font-heading);
+    background-color: var(--alternative-bg-color);
+    color: var(--alternative-text-color);
+    padding: var(--spacer);
+    border-radius: 30px;
+    min-width: 200px; 
+    text-transform: uppercase;
+    }
+
+input[type="submit"]:hover {
+    background-color: var(--strong-text-color);
+    }
+
 
 /* ----------------------------- MODULES */
 
