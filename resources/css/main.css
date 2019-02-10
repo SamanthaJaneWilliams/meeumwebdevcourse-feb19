@@ -41,6 +41,20 @@
   }
 
 
+
+/* Use this for responsive design, will change viewport depending on device, if the screen size is bigger than 800px, it will make the font sizes as per below */
+@media screen and (min-width: 800px) {
+
+    :root {
+        --foot-size-page-title: 54px;
+        --font-size-section-title: 48px;
+    }
+
+}
+
+
+
+
 /* ----------------------------- GLOBAL DEFAULTS */
 
 * {
@@ -123,6 +137,7 @@ header {
 
 header .layout-wide {
     overflow: hidden; 
+    margin-bottom: 0;
 }
    
 .logo-wrapper {
@@ -140,6 +155,73 @@ header .layout-wide {
 }
 
 /* ----------------------------- NAVIGATION */
+
+.navigation {
+    background-color: var(--alternative-bg-color);
+    
+    /*This makes the navigation bar scroll with the user (stays at top)*/
+    position: sticky; 
+    top: 0;
+}
+
+.nav-promt {
+    width: 100%;
+    background-color: var(--alternative-bg-color);
+    color: var(--alternative-text-color);
+    padding-top: var(--padder);
+    padding-bottom: var(--padder);
+    border: none;
+    border-top: 1px solid black;
+    }
+
+.nav-inner ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    list-style: none;
+    }
+
+.nav-inner a {
+    color: var(--alternative-text-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1px solid var(--border-color);
+    padding-top: var(--spacer);
+    padding-bottom: var(--spacer);
+    display: block;
+    }
+
+/* When over screen is over 800px this is what will happen*/
+@media screen and  (min-width: 800px) {
+    
+    .nav-promt {
+        display: none;
+    }
+
+    .nav-inner ul {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* When over screen is under 800px this is what will happen*/
+@media screen and (max-width: 800px) {
+
+    .nav-inner {
+        overflow: hidden;
+        transition: var(--transition-time) ease-in-out;
+    }
+
+    .nav-inner[aria-expanded="false"] {
+        max-height: 0;
+    }
+
+    .nav-inner[aria-expanded="true"] {
+        max-height: 100vh; /* vh means height of viewport */
+    }
+
+
+}
 
 
 
