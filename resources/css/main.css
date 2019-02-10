@@ -366,3 +366,34 @@ input[type="submit"]:hover {
     filter: unset;              /*ignores what was set as filter previously for the hover*/
     transform: scale(1.05);
 }
+
+
+
+/*ANIMATIONS*/
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+main {
+    animation-name: fadein;
+    animation-duration: 0.5s;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.logo-wrapper a:hover img {
+    animation-name: spin;
+    animation-duration: 1s;
+}
+
